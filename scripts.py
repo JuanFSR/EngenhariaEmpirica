@@ -18,3 +18,9 @@ def getDateFormat(data):
                 valoresDateFormat[idx].append([ano, mes, dia])
     
     return valoresDateFormat
+
+def returnY(max):
+    y = []
+    for i in range(1, max+1):
+        y.append(i)
+    return y
