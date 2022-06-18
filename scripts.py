@@ -1,3 +1,6 @@
+import numpy as np
+from math import sqrt
+
 def getDateFormat(data):
     valoresDateFormat = []
     ano = []
@@ -24,3 +27,10 @@ def returnY(max):
     for i in range(1, max+1):
         y.append(i)
     return y
+
+def cohend(d1, d2):
+	n1, n2 = len(d1), len(d2)
+	s1, s2 = np.var(d1, ddof=1), np.var(d2, ddof=1)
+	s = sqrt(((n1 - 1) * s1 + (n2 - 1) * s2) / (n1 + n2 - 2))
+	u1, u2 = np.mean(d1), np.mean(d2)
+	return (u1 - u2) / s
