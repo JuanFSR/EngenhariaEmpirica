@@ -56,6 +56,19 @@ r:
 
 Desta comparação, já conseguimos notar que a linguagem de programação python tem mais novatos que a linguagem de programação r. Mas será que existe realmente uma diferença entre esses conjuntos? Essa foi a pergunta que esperamos responder através dos testes estatísticos.
 
+## Testes Estátisticos <h2>
+Utilizamos o teste Mann-Whitney com o propósito de verificar estatisticamente se há essa diferença entre o número de novatos na linguagem python e r, utilizando respectivamente cada biblioteca para realizar este teste. Em conjunto com o teste Mann-Whitney, foi utilizado o Cohens' D para medir o tamanho de efeito entre as duas médias.
+Ao aplicar estes testes estátisticos, foi observado que para quase todas as bibliotecas, a nossa hipotése nula foi rejeitada, ou seja, estatísticamente há sim uma diferença entre a quantidade de novatos, apresentando uma diferença média significativa ou bastante significativa, como é possível observar abaixo.
+
+<img src="result/boxplot/1.box_plot.png" style="">
+</img>
+
+Após executar estes testes observamos algo peculiar, apenas para as bibliotecas 'Pandas' e 'ggplot2' não encontramos que há uma diferença estatística entre a quantidade de novatos, comparando estas duas bibliotecas. Decidimos então analisar a quantidade de novatos em um escopo menor, neste caso, ano a ano. Temos como objetivo aplicar os testes estatísticos realizados anteriormente, para investigar como foi a distribuição de novatos que realizaram perguntas sobre essas bibliotecas e como isso muda ao decorrer dos anos. Abaixo podemos observar o boxplot da quantidade de novatos anulmente para as duas bibliotecas citadas anteriormente.
+
+<img src="result/boxplot/2.box_plot.png" style="">
+</img>
+
+Para todos os testes realizados ano a ano, a nossa hipótese nula só não foi rejeitada no ano de 2013, ou seja, foi possível observar em quase todos anos que a quantidade de novatos é estatísticamente diferente, sendo que nos anos de 2011 e 2012 havia uma grande quantidade de novatos para a biblioteca 'ggplot2' e uma quantidade inferior de novatos para a biblioteca 'Pandas', já no ano de 2013 a quantidade de novatos para as duas bibliotecas não é estatísticamente difente, porém, no ano de 2014 até o ano de 2016 vimos que a quantidade de novatos para a biblioteca 'Pandas' é estatísticamente maior do que para a biblioteca 'ggplot2'. Através destes testes podemos notar que no início a biblioteca 'ggplot2' era mais utilizada, entretanto, com o passar dos anos, a popularidade da biblioteca 'Pandas' só continuou a crescer, ultrapassando o número de novatos anualmente em relação ao 'ggplot2'.
 
 # Execução
 É necessário fazer o clone do repositório no github, e executar o notebook, para que os resultados sejam exibidos.
