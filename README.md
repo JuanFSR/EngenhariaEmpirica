@@ -56,7 +56,7 @@ r:
 
 Desta comparação, já conseguimos notar que a linguagem de programação python tem mais novatos que a linguagem de programação r. Mas será que existe realmente uma diferença entre esses conjuntos? Essa foi a pergunta que esperamos responder através dos testes estatísticos.
 
-## Testes Estátisticos <h2>
+### Testes Estátisticos
 Utilizamos o teste Mann-Whitney com o propósito de verificar estatisticamente se há essa diferença entre o número de novatos na linguagem python e r, utilizando respectivamente cada biblioteca para realizar este teste. Em conjunto com o teste Mann-Whitney, foi utilizado o Cohens' D para medir o tamanho de efeito entre as duas médias.
 Ao aplicar estes testes estátisticos, foi observado que para quase todas as bibliotecas, a nossa hipotése nula foi rejeitada, ou seja, estatísticamente há sim uma diferença entre a quantidade de novatos, apresentando uma diferença média significativa ou bastante significativa, como é possível observar abaixo.
 
